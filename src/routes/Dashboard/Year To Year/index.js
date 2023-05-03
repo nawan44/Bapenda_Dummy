@@ -17,105 +17,6 @@ import seriesDaily from "../../../components/DataDummy/seriesDaily.json";
 const { Option } = Select;
 const { RangePicker } = DatePicker;
 
-const data = [
-  {
-    key: "1",
-    bulan: "Januari",
-    lastYear: 280000,
-    thisYear: 130000,
-    selisih: 150000,
-    growth: "53.57%",
-  },
-  {
-    key: "2",
-    bulan: "Februari",
-    lastYear: 340000,
-    thisYear: 450000,
-    selisih: -110000,
-    growth: "-32.35%",
-  },
-  {
-    key: "3",
-    bulan: "Maret",
-    lastYear: 370000,
-    thisYear: 130000,
-    selisih: 240000,
-    growth: "64.86%",
-  },
-  {
-    key: "4",
-    bulan: "April",
-    lastYear: 1880000,
-    thisYear: 1800000,
-    selisih: 80000,
-    growth: "4.26%",
-  },
-  {
-    key: "5",
-    bulan: "Mei",
-    lastYear: 680000,
-    thisYear: 980000,
-    selisih: -300000,
-    growth: "-44.12%",
-  },
-  {
-    key: "6",
-    bulan: "Juni",
-    lastYear: 880000,
-    thisYear: 137000,
-    selisih: 743000,
-    growth: "84.43%",
-  },
-  {
-    key: "7",
-    bulan: "Juli",
-    lastYear: 1240000,
-    thisYear: 890000,
-    selisih: 350000,
-    growth: "28.23%",
-  },
-  {
-    key: "8",
-    bulan: "Agustus",
-    lastYear: 1180000,
-    thisYear: 730000,
-    selisih: 450000,
-    growth: "38.14%",
-  },
-  {
-    key: "9",
-    bulan: "September",
-    lastYear: 1790000,
-    thisYear: 930000,
-    selisih: 860000,
-    growth: "48.04%",
-  },
-  {
-    key: "10",
-    bulan: "Oktober",
-    lastYear: 1670000,
-    thisYear: 793000,
-    selisih: 877000,
-    growth: "52.51%",
-  },
-  {
-    key: "11",
-    bulan: "November",
-    lastYear: 978000,
-    thisYear: 782600,
-    selisih: 195400,
-    growth: "19.98%",
-  },
-  {
-    key: "12",
-    bulan: "Desember",
-    lastYear: 750000,
-    thisYear: 955000,
-    selisih: -205000,
-    growth: "-27.33%",
-  },
-];
-
 const dateFormat = "YYYY";
 
 const YearToYear = (props) => {
@@ -131,9 +32,6 @@ const YearToYear = (props) => {
   const [monthly, setMonthly] = useState(seriesDaily);
   const [thisYearly, setThisYearly] = useState(seriesMonthlyThisYear);
   const [lastYearly, setLastYearly] = useState(seriesMonthlyLastYear);
-
-  console.log("lastYearly", lastYearly);
-  console.log("thisYearly", thisYearly);
 
   const [thisMonthly, setThisMonthly] = useState(moment().format("YYYY"));
   const [lastMonthly, setLastMonthly] = useState(
@@ -245,11 +143,9 @@ const YearToYear = (props) => {
     thisYear: Number(row[1].stringValue),
     key: index,
   }));
-  console.log("tahunIni", tahunIni);
   const tahunLalu = lastYearly?.map((row, index) => ({
     bulan: months[row[0].stringValue - 1],
     lastYear: Number(row[1].stringValue),
-    // lastYear: formatter.format(row[1].stringValue),
     key: index,
   }));
 
@@ -262,29 +158,21 @@ const YearToYear = (props) => {
     Object.assign({}, item, tahunLalu && tahunLalu[i])
   );
 
-  console.log("mergedArray", mergedArray);
+  // const increases =
+  //   mergedArray &&
+  //   mergedArray
+  //     .map((item, index) => {
+  //       if ((item.thisYear - item.lastYear) / item.lastYear === Infinity) {
+  //         return 100;
+  //       } else {
+  //         return formatter.format(
+  //           ((item.thisYear - item.lastYear) / item.lastYear) * 100
+  //         );
+  //       }
+  //     })
+  //     .filter(Boolean);
 
-  const arraySelisih =
-    mergedArray &&
-    mergedArray.reduce((acc, curr, curVal) => {
-      acc[curr.created_at] = curr.total_thisYear - curr.total_lastYear;
-      return acc;
-    }, {});
-
-  const arrayGrowth =
-    mergedArray &&
-    mergedArray.reduce((acc, curr, curVal) => {
-      Number.isNaN(curr.thisYear / curr.lastYear)
-        ? "0"
-        : (acc[curr.created_at] =
-            100 *
-            Math.abs(
-              (Number(curr.total_lastYear) - Number(curr.total_thisYear)) /
-                Number(curr.total_lastYear)
-            ));
-
-      return acc;
-    }, {});
+  // console.log("increases", increases);
 
   const resultTable =
     mergedArray &&
@@ -297,29 +185,19 @@ const YearToYear = (props) => {
         lastYear: formatter.format(item.lastYear),
         thisYear: formatter.format(item.thisYear),
         selisih: item.thisYear - item.lastYear,
-        growth: Number.isNaN(item.thisYear / item.lastYear)
-          ? "0"
-          : item.thisYear - item.lastYear !== 0
-          ? "100%"
-          : arrayGrowth[item.created_at],
+        growth:
+          (item.thisYear - item.lastYear) / item.lastYear === Infinity
+            ? "100.00%"
+            : parseFloat(
+                ((item.thisYear - item.lastYear) / item.lastYear) * 100
+              ).toFixed(2) + "%",
       };
     });
-
-  // const resultChart =
-  //   mergedArray &&
-  //   mergedArray.map((item, index) => {
-  //     return {
-  //       ...item,
-
-  //       // key: index + 1,
-  //       selisih: item.thisYear - item.lastYear,
-  //     };
-  //   });
 
   return (
     <Widget styleName="gx-order-history">
       <Row>
-        <Col span={12} style={{ padding: "0px 5px" }}>
+        <Col span={12} style={{ padding: "0px 0px 0px 10px" }}>
           <div style={{ width: "500px", height: "100px" }}>
             <div style={{ width: "100%", float: "left" }}>
               {" "}
@@ -331,7 +209,7 @@ const YearToYear = (props) => {
                   fontWeight: "bold",
                 }}
               >
-                Year To Year
+                Pertumbuhan Pajak (Year To Year) *dalam ribuan
               </Typography>
             </div>
             {/* <div style={{ width: "25%", float: "left" }}>
@@ -398,7 +276,7 @@ const YearToYear = (props) => {
             </div>
           </div>
           <ChartYearToYear
-            data={data}
+            data={resultTable}
             // result={result}
             // data={resultChart}
           />

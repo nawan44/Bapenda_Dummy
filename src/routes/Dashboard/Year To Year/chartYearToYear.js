@@ -14,7 +14,6 @@ import {
 } from "recharts";
 
 function ChartYearToYear({ data }) {
-
   // console.log("chart data chart", data)
 
   const gradientOffset = () => {
@@ -32,9 +31,12 @@ function ChartYearToYear({ data }) {
 
   const off = gradientOffset();
   return (
-    <div style={{
-      // background:"green",
-     width:"90%"}}>
+    <div
+      style={{
+        // background:"green",
+        width: "100%",
+      }}
+    >
       <ResponsiveContainer width="100%" height={350}>
         <AreaChart
           width={500}

@@ -17,7 +17,7 @@ import "../../../../assets/styles/flip-card.css";
 import jwtDecode from "jwt-decode";
 import { Select, Typography } from "antd";
 import { DatePicker } from "antd";
-import seriesMonthly from "../../../../components/DataDummy/seriesMonthly.json";
+import seriesMonthly from "../../../../components/DataDummy/seriesMonthlyThisYear.json";
 import seriesDaily from "../../../../components/DataDummy/seriesDaily.json";
 
 const { Option } = Select;
