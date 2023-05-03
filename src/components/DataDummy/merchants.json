@@ -1,0 +1,98 @@
+[
+  [
+    {
+      "stringValue": "123456"
+    },
+    {
+      "stringValue": "Ridwan"
+    },
+    {
+      "stringValue": "rid@gmail.com"
+    },
+    {
+      "stringValue": "Restoran Kita"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": "3215694940202982"
+    },
+    {
+      "stringValue": "Jl Raya No 45, Jakarta"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "256790"
+    },
+    {
+      "stringValue": "Rahmat"
+    },
+    {
+      "stringValue": "rac@gmail.com"
+    },
+    {
+      "stringValue": "Parkir Jalan"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": "3135645670202980"
+    },
+    {
+      "stringValue": "Jl Raya No 45, Bekasi"
+    },
+    {
+      "stringValue": "POS APP"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "orange"
+    }
+  ],
+  [
+    {
+      "stringValue": "623432"
+    },
+    {
+      "stringValue": "Kae"
+    },
+    {
+      "stringValue": "gdj@gmail.com"
+    },
+    {
+      "stringValue": "Hotel Bersama"
+    },
+    {
+      "stringValue": "Hotel"
+    },
+    {
+      "stringValue": "234212734609841"
+    },
+    {
+      "stringValue": "Jalan Raya No 45, Jakarta"
+    },
+    {
+      "stringValue": "SDC"
+    },
+    {
+      "stringValue": false
+    },
+    {
+      "stringValue": "red"
+    }
+  ]
+]
