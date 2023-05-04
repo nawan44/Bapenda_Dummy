@@ -122,6 +122,7 @@ const SectionDevice = (props) => {
       // console.log("data tidak ada");
     }
   });
+
   const titleStatus = () => {
     if (location.pathname === "/device-all") {
       return "All";
@@ -133,6 +134,11 @@ const SectionDevice = (props) => {
       return "Hotel";
     }
   };
+
+  console.log("filteredData", filteredData);
+  console.log("filteredPolls", filteredPolls);
+  console.log("filter", filter);
+
   return (
     <>
       <Widget styleName="gx-order-history  gx-p-4 ">
@@ -176,7 +182,7 @@ const SectionDevice = (props) => {
               &gt; 3 Hari Off
             </Button>
 
-            <Button onClick={() => showRemove()}> Remove</Button>
+            <Button onClick={() => showRemove()}>Reset</Button>
             <Search
               placeholder="Cari data ..."
               enterButton="Search"
@@ -191,7 +197,6 @@ const SectionDevice = (props) => {
         <Row style={{ margin: "30px 0 5px 0" }}>
           <Col span={24}>
             <Title style={{ float: "left" }} level={4}>
-              {" "}
               Daftar Device {titleStatus()}
             </Title>
           </Col>

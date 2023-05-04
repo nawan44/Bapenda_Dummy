@@ -49,19 +49,19 @@ const Productivity = ({
     detailMerchant && detailMerchant.map((row) => Number(row[20].stringValue));
 
   const transaksiPendapatan1 =
-    detailMerchant && detailMerchant.map((row) => row[9].longValue);
+    detailMerchant && detailMerchant.map((row) => row[9].stringValue);
   const transaksiPendapatan2 =
-    detailMerchant && detailMerchant.map((row) => row[11].longValue);
+    detailMerchant && detailMerchant.map((row) => row[11].stringValue);
   const transaksiPendapatan3 =
-    detailMerchant && detailMerchant.map((row) => row[13].longValue);
+    detailMerchant && detailMerchant.map((row) => row[13].stringValue);
   const transaksiPendapatan4 =
-    detailMerchant && detailMerchant.map((row) => row[15].longValue);
+    detailMerchant && detailMerchant.map((row) => row[15].stringValue);
   const transaksiPendapatan5 =
-    detailMerchant && detailMerchant.map((row) => row[17].longValue);
+    detailMerchant && detailMerchant.map((row) => row[17].stringValue);
   const transaksiPendapatan6 =
-    detailMerchant && detailMerchant.map((row) => row[19].longValue);
+    detailMerchant && detailMerchant.map((row) => row[19].stringValue);
   const transaksiPendapatan7 =
-    detailMerchant && detailMerchant.map((row) => row[21].longValue);
+    detailMerchant && detailMerchant.map((row) => row[21].stringValue);
 
   const dataPendapatan = [
     {
@@ -220,7 +220,7 @@ const Productivity = ({
               marginLeft: "10px",
             }}
           >
-            Grafik Pendapatan
+            Grafik Pendapatan Merchant
           </Typography>
         </Row>
         <ResponsiveContainer width="95%" height={300}>
@@ -251,7 +251,7 @@ const Productivity = ({
               marginLeft: "10px",
             }}
           >
-            Grafik Transaksi
+            Grafik Transaksi Merchant
           </Typography>
         </Row>
         <ResponsiveContainer width="95%" height={300}>

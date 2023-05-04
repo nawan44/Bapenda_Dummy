@@ -7,22 +7,118 @@
       "stringValue": "Ridwan"
     },
     {
+      "stringValue": "3215694940202982"
+    },
+    {
       "stringValue": "rid@gmail.com"
     },
     {
       "stringValue": "Restoran Kita"
     },
     {
-      "stringValue": "Restoran"
-    },
-    {
-      "stringValue": "3215694940202982"
-    },
-    {
-      "stringValue": "Jl Raya No 45, Jakarta"
+      "stringValue": "Jl Raya No 17, Cipayung, Jakarta Timur"
     },
     {
       "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "78nem98"
+    },
+    {
+      "stringValue": "Sabar"
+    },
+    {
+      "stringValue": "4575656120202123"
+    },
+    {
+      "stringValue": "sederhana@outlook.com"
+    },
+    {
+      "stringValue": "RM Sederhana"
+    },
+    {
+      "stringValue": "Jl Raya No 29, Senen, Jakarta Pusat"
+    },
+    {
+      "stringValue": "POS"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "orange"
+    }
+  ],
+  [
+    {
+      "stringValue": "98tu5849ui3"
+    },
+    {
+      "stringValue": "Junaidi"
+    },
+    {
+      "stringValue": "3147867940202789"
+    },
+    {
+      "stringValue": "enak@gmail.com"
+    },
+    {
+      "stringValue": "Restoran Enak"
+    },
+    {
+      "stringValue": "Jl Raya No 1, Cakung, Jakarta Timur"
+    },
+    {
+      "stringValue": "BDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "red"
+    }
+  ],
+  [
+    {
+      "stringValue": "343mn544m"
+    },
+    {
+      "stringValue": "Jaelani"
+    },
+    {
+      "stringValue": "3980349321202298"
+    },
+    {
+      "stringValue": "park_kita@gmail.com"
+    },
+    {
+      "stringValue": "Parkir Kita"
+    },
+    {
+      "stringValue": "Jl Raya No 45, Matraman, Jakarta Timur"
+    },
+    {
+      "stringValue": "SDC"
+    },
+    {
+      "stringValue": "Parkir"
     },
     {
       "stringValue": true
@@ -39,22 +135,22 @@
       "stringValue": "Rahmat"
     },
     {
+      "stringValue": "3135645670202980"
+    },
+    {
       "stringValue": "rac@gmail.com"
     },
     {
       "stringValue": "Parkir Jalan"
     },
     {
-      "stringValue": "Parkir"
-    },
-    {
-      "stringValue": "3135645670202980"
-    },
-    {
-      "stringValue": "Jl Raya No 45, Bekasi"
+      "stringValue": "Jl Raya No 4, Cilandak, Jakarta Selatan"
     },
     {
       "stringValue": "POS APP"
+    },
+    {
+      "stringValue": "Parkir"
     },
     {
       "stringValue": true
@@ -65,10 +161,109 @@
   ],
   [
     {
+      "stringValue": "74ujd6478"
+    },
+    {
+      "stringValue": "Leman"
+    },
+    {
+      "stringValue": "2340982960202295"
+    },
+    {
+      "stringValue": "parks@gmail.com"
+    },
+    {
+      "stringValue": "Parkiran Sini"
+    },
+    {
+      "stringValue": "Jl Raya No 23, Tambora, Jakarta Barat"
+    },
+    {
+      "stringValue": "Agent"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "red"
+    }
+  ],
+  [
+    {
+      "stringValue": "474ufj57w8j56"
+    },
+    {
+      "stringValue": "Karni"
+    },
+    {
+      "stringValue": "429012732959496"
+    },
+    {
+      "stringValue": "kita@outlook.com"
+    },
+    {
+      "stringValue": "Hotel Kita"
+    },
+    {
+      "stringValue": "Jalan Raya No 67, Kemayoran, Jakarta Pusat"
+    },
+    {
+      "stringValue": "BDC"
+    },
+    {
+      "stringValue": "Hotel"
+    },
+    {
+      "stringValue": false
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "374it849ejr88"
+    },
+    {
+      "stringValue": "Bambang"
+    },
+    {
+      "stringValue": "391629434602740"
+    },
+    {
+      "stringValue": "bams@gmail.com"
+    },
+    {
+      "stringValue": "Hotel Selalu"
+    },
+    {
+      "stringValue": "Jalan Raya No 45, Koja, Jakarta Utara"
+    },
+    {
+      "stringValue": "SDC"
+    },
+    {
+      "stringValue": "Hotel"
+    },
+    {
+      "stringValue": false
+    },
+    {
+      "stringValue": "orange"
+    }
+  ],
+  [
+    {
       "stringValue": "623432"
     },
     {
-      "stringValue": "Kae"
+      "stringValue": "Silvi"
+    },
+    {
+      "stringValue": "234212734609841"
     },
     {
       "stringValue": "gdj@gmail.com"
@@ -77,16 +272,13 @@
       "stringValue": "Hotel Bersama"
     },
     {
-      "stringValue": "Hotel"
-    },
-    {
-      "stringValue": "234212734609841"
-    },
-    {
-      "stringValue": "Jalan Raya No 45, Jakarta"
+      "stringValue": "Jalan Raya No 5,Setia Budi, Jakarta Selatan"
     },
     {
       "stringValue": "SDC"
+    },
+    {
+      "stringValue": "Hotel"
     },
     {
       "stringValue": false

@@ -16,7 +16,7 @@ const { Title } = Typography;
 const SectionDeviceHotel = (props) => {
   let location = useLocation();
   const { listData, setListData } = props;
-
+  console.log("setListData Hotel", setListData);
   const [filter, setFilter] = useState("");
   const [buttonGreen, setButtonGreen] = useState("white");
   const [buttonBackgroundGreen, setButtonBackgroundGreen] = useState("green");

@@ -24,7 +24,7 @@ const SectionDeviceRestoran = (props) => {
   const [buttonRed, setButtonRed] = useState("white");
   const [buttonBackgroundRed, setButtonBackgroundRed] = useState("red");
 
-  const [listDevice, setListDevice] = useState();
+  const [listDevice, setListDevice] = useState(merchantsData);
 
   // useEffect(() => {
   //     getListDevice();

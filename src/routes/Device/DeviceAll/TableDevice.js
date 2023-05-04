@@ -12,7 +12,7 @@ const TableDevice = (props) => {
   const showModal = (record) => {
     setIsModalVisible(true);
   };
-
+  console.log("data", data);
   const handleCancel = () => {
     setIsModalVisible(false);
   };

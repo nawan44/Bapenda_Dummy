@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Col, Row, Card } from "antd";
+import { Col, Row, Card, Badge, Space } from "antd";
 // import PieChartWithCustomizedLabel from ".pieChartWithCustomizedLabel";
 import jwtDecode from "jwt-decode";
 import * as moment from "moment";
@@ -45,12 +45,38 @@ function PieChart() {
   //   const ajson = await response.json();
   //   setGetEarnByCat(ajson.Records);
   // };
+  const changeData =
+    getEarnByCat &&
+    getEarnByCat.map((row) => ({
+      value: Number(row[1].stringValue),
+      name: row[0].stringValue,
+    }));
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
+  const data = changeData?.map((item, i) => ({ ...item, color: COLORS[i] }));
 
+  console.log("data", data);
   return (
     <>
       <Col span={12}>
-        <Card className="gx-card" title="Pendapatan Per Kategori">
-          <PiePendapatan getEarnByCat={getEarnByCat} />
+        <Card
+          style={{
+            margin: 0,
+            padding: 0,
+            textAlign: "center",
+          }}
+          title={
+            <h3 style={{ fontWeight: "bold" }}>Pendapatan Per Kategori</h3>
+          }
+        >
+          {data.map((item) => (
+            <span style={{ margin: "0px 30px" }}>
+              <Space size="large">
+                <Badge.Ribbon text={item.name} color={item.color} />
+              </Space>
+            </span>
+          ))}
+
+          <PiePendapatan data={data} />
         </Card>
       </Col>
       <Col span={12}>
