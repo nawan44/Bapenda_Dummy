@@ -1,6 +1,102 @@
 [
   [
     {
+      "stringValue": "1ju3iiw8920o"
+    },
+    {
+      "stringValue": "Dewi"
+    },
+    {
+      "stringValue": "392001938237190"
+    },
+    {
+      "stringValue": "dew@gmail.com"
+    },
+    {
+      "stringValue": "Hotel Duo"
+    },
+    {
+      "stringValue": "Jalan Raya No 35, Tanah Abang, Jakarta Pusat"
+    },
+    {
+      "stringValue": "BDC"
+    },
+    {
+      "stringValue": "Hotel"
+    },
+    {
+      "stringValue": false
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "64ud778uu20od"
+    },
+    {
+      "stringValue": "Kartika"
+    },
+    {
+      "stringValue": "3281920375102038"
+    },
+    {
+      "stringValue": "kar@gmail.com"
+    },
+    {
+      "stringValue": "Hotel Duo"
+    },
+    {
+      "stringValue": "Jalan Raya No 5, Tanjung Priok, Jakarta Utara"
+    },
+    {
+      "stringValue": "BDC"
+    },
+    {
+      "stringValue": "Hotel"
+    },
+    {
+      "stringValue": false
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "1de2dc3g45e6ffr"
+    },
+    {
+      "stringValue": "Opung"
+    },
+    {
+      "stringValue": "43209403829838304"
+    },
+    {
+      "stringValue": "apungs@gmail.com"
+    },
+    {
+      "stringValue": "Restoran Apung"
+    },
+    {
+      "stringValue": "Jl Raya No 107, Makassar, Jakarta Timur"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
       "stringValue": "123456"
     },
     {
@@ -61,6 +157,70 @@
     },
     {
       "stringValue": "orange"
+    }
+  ],
+  [
+    {
+      "stringValue": "7384oc7383jud90d"
+    },
+    {
+      "stringValue": "Iqbal"
+    },
+    {
+      "stringValue": "2637920418390018"
+    },
+    {
+      "stringValue": "iqb@outlook.com"
+    },
+    {
+      "stringValue": "Parkout"
+    },
+    {
+      "stringValue": "Jl Raya No 29, Mampang Prapatan, Jakarta Selatan"
+    },
+    {
+      "stringValue": "POS"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "orange"
+    }
+  ],
+  [
+    {
+      "stringValue": "92id80p28e0p"
+    },
+    {
+      "stringValue": "Frenz"
+    },
+    {
+      "stringValue": "3891837501933740"
+    },
+    {
+      "stringValue": "frenz@gmail.com"
+    },
+    {
+      "stringValue": "Restoran Frens"
+    },
+    {
+      "stringValue": "Jl Raya No 17, Cipayung, Jakarta Timur"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
     }
   ],
   [
@@ -161,6 +321,38 @@
   ],
   [
     {
+      "stringValue": "74ud8o299od48d"
+    },
+    {
+      "stringValue": "Rian"
+    },
+    {
+      "stringValue": "3471937402642749"
+    },
+    {
+      "stringValue": "rian@gmail.com"
+    },
+    {
+      "stringValue": "Ayam Rian"
+    },
+    {
+      "stringValue": "Jl Raya No 28, Cempaka Putih, Jakarta Pusat"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
       "stringValue": "74ujd6478"
     },
     {
@@ -257,6 +449,38 @@
   ],
   [
     {
+      "stringValue": "465jdj833uf783i"
+    },
+    {
+      "stringValue": "Ikbal"
+    },
+    {
+      "stringValue": "3291093673016401"
+    },
+    {
+      "stringValue": "ikbal@gmail.com"
+    },
+    {
+      "stringValue": "Kue ikbal"
+    },
+    {
+      "stringValue": "Jl Raya No 29, Kebayoran Baru, Jakarta Selatan"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
       "stringValue": "623432"
     },
     {
@@ -285,6 +509,134 @@
     },
     {
       "stringValue": "red"
+    }
+  ],
+  [
+    {
+      "stringValue": "74y6r90s72o"
+    },
+    {
+      "stringValue": "Anang"
+    },
+    {
+      "stringValue": "3195361002641846"
+    },
+    {
+      "stringValue": "nang@gmail.com"
+    },
+    {
+      "stringValue": "Anangs"
+    },
+    {
+      "stringValue": "Jl Raya No 49, Pasar Minggu, Jakarta Selatan"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Restoran"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "737udeyu73is92o"
+    },
+    {
+      "stringValue": "Satya"
+    },
+    {
+      "stringValue": "9283029483741890"
+    },
+    {
+      "stringValue": "sat@gmail.com"
+    },
+    {
+      "stringValue": "Satys"
+    },
+    {
+      "stringValue": "Jl Raya No 09, Cengkareng, Jakarta Barat"
+    },
+    {
+      "stringValue": "PDC"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "orange"
+    }
+  ],
+  [
+    {
+      "stringValue": "748id739sjf73jdi"
+    },
+    {
+      "stringValue": "Gunadi"
+    },
+    {
+      "stringValue": "6374930284637389"
+    },
+    {
+      "stringValue": "guns@gmail.com"
+    },
+    {
+      "stringValue": "Guns"
+    },
+    {
+      "stringValue": "Jl Raya No 09, Grogol Petamburan, Jakarta Barat"
+    },
+    {
+      "stringValue": "Agent"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
+    }
+  ],
+  [
+    {
+      "stringValue": "16ye6y3478r8f"
+    },
+    {
+      "stringValue": "Galuh"
+    },
+    {
+      "stringValue": "8374637464896273"
+    },
+    {
+      "stringValue": "parin@gmail.com"
+    },
+    {
+      "stringValue": "Parkin"
+    },
+    {
+      "stringValue": "Jl Raya No 09, Taman Sari, Jakarta Barat"
+    },
+    {
+      "stringValue": "BDC"
+    },
+    {
+      "stringValue": "Parkir"
+    },
+    {
+      "stringValue": true
+    },
+    {
+      "stringValue": "green"
     }
   ]
 ]
