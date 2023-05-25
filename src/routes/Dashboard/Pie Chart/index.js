@@ -7,7 +7,7 @@ import PiePendapatan from "./piePendapatan";
 import PieStatus from "./pieStatus";
 import earnsbycatData from "../../../components/DataDummy/earnsbycat.json";
 import merchantsData from "../../../components/DataDummy/merchants.json";
-
+import Widget from "../../../components/Widget";
 // import { latestTransaction1 } from "../../../components/DataDummy";
 
 function PieChart() {
@@ -95,14 +95,9 @@ function PieChart() {
   console.log("warna ", warna);
 
   return (
-    <>
-      <Col span={12}>
+    <div style={{ width: "100%", background: "yellow" }}>
+      <Col className="col-pie">
         <Card
-          style={{
-            margin: 0,
-            padding: 0,
-            textAlign: "center",
-          }}
           title={
             <h3 style={{ fontWeight: "bold" }}>Pendapatan Per Kategori</h3>
           }
@@ -118,11 +113,15 @@ function PieChart() {
           <PiePendapatan data={dataKategori} />
         </Card>
       </Col>
-      <Col span={12}>
+      <Col
+        className="col-pie"
+
+        // xs={72}
+        // xl={36}
+      >
         {/* <Card className="gx-card" title="Status Device">
           <PieStatus getEarnByCat={getEarnByCat} />
         </Card> */}
-
         <Card
           style={{
             margin: 0,
@@ -147,7 +146,7 @@ function PieChart() {
           <PieStatus data={changeDataStatusDevice} />
         </Card>
       </Col>
-    </>
+    </div>
   );
 }
 

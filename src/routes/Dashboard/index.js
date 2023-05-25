@@ -92,23 +92,46 @@ const SamplePage = () => {
           setLatestTransaction={setLatestTransaction}
         />
       </Row>
-      <Row className="row-year-to-year">
-        <YearToYear />
-      </Row>
+      <YearToYear />
       <Row className="row-target-pajak">
         <Col xl={8} lg={24} md={24} sm={24} xs={24} className="gx-order-sm-2">
-          <Widget>
+          <Widget className="target-gauge">
             <TargetGauge />
           </Widget>
           <Widget>
             <TopTen />
           </Widget>
         </Col>
-        <Col xl={16} lg={24} md={24} sm={24} xs={24} className="gx-order-sm-1">
+        <Col
+          style={{
+            margin: 0,
+            padding: 5,
+            textAlign: "center",
+            background: "red",
+            width: "100%",
+            backgroundColor: "green",
+          }}
+          xs={24}
+          xl={16}
+          lg={24}
+          md={24}
+          // xl={16}
+          // lg={24}
+          // md={24}
+          // sm={24}
+          // xs={24}
+          className="gx-order-sm-1"
+        >
           <Row>
             <BarTransaksiPendapatan />
           </Row>
-          <Row>
+          <Row
+            style={{
+              margin: 0,
+              padding: "0px 5px",
+              textAlign: "center",
+            }}
+          >
             <PieChart />
           </Row>
         </Col>

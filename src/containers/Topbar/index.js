@@ -66,13 +66,11 @@ const Topbar = () => {
       <Link to="/dashboard" className="gx-d-block gx-d-lg-none gx-pointer">
         <img
           alt="logo"
-          style={{ width: "50px" }}
+          className="icon-dashboard"
           src={"/assets/images/bapenda.png"}
         />
       </Link>
-      <h1 style={{ marginLeft: "15px", marginTop: "5px", fontWeight: "bold" }}>
-        Sistem Monitoring Pajak Online
-      </h1>
+      <h1 className="title-dashboard">Sistem Monitoring Pajak Online</h1>
       {/* <SearchBox styleName="gx-d-none gx-d-lg-block gx-lt-icon-search-bar-lg"
                  placeholder="Search in app..."
                  onChange={updateSearchChatUser}

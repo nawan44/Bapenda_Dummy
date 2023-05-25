@@ -1,9 +1,20 @@
+.title-dashboard {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.icon-dashboard {
+    width: 50px
+}
+
 .container-dashboard1 {
     width: 100%;
     height: 100%;
     display: flex;
     margin-bottom: 10px;
-
+    height: 350px !important;
+    background-color: blue;
 }
 
 .container-dashboard2 {
@@ -11,7 +22,19 @@
     height: 100%;
     /* display: flex; */
     margin-top: 25px;
+}
 
+.year-to-year {
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.table-year-to-year {
+    height: 350px;
+    padding: 0;
+    background-color: red;
 }
 
 .container-dashboard3 {
@@ -19,7 +42,18 @@
     height: 100%;
     display: flex;
     /* background-color: aqua; */
+    height: 250px !important;
+    background-color: blue;
+}
 
+.col-pie {
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    padding: 5;
+    width: 48%;
+    margin: 0px 5px !important;
+    background: grey;
 }
 
 .container-dashboard4 {
@@ -42,7 +76,6 @@
 .row-year-to-year {
     margin-top: 30px;
     /* padding-bottom: 4px; */
-
     /* background-color: blue; */
 }
 
@@ -52,8 +85,44 @@
     display: flex;
     /* margin-bottom: 5px; */
     padding-top: 10px;
-    /* background-color: red; */
+    background-color: red;
+}
 
+.title-target-pajak {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitle-left-target-pajak {
+    padding: 0 0 5px 0;
+    font-size: 16px;
+    width: 30%;
+    float: left;
+}
+
+.subtitle-right-target-pajak {
+    padding: 0 0 5px 0;
+    font-size: 16px;
+    width: 70%;
+    float: left;
+}
+
+.gx-card-widget .ant-card-body {
+    padding: 20px;
+}
+
+.target-gauge {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.title-latest-transaction {
+    float: left;
 }
 
 @media (max-width: 599px) {
@@ -105,11 +174,28 @@
 
 @media (max-width: 300px) {
 
-    .container-dashboard1 {
-        width: 100%;
-        height: 900px;
-        /* display: flex; */
+    .icon-dashboard {
+        width: 70px;
+        margin: 0px -10px;
+    }
 
+    .title-dashboard {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 12px;
+        margin-left: -10px;
+        font-weight: bold;
+        display: none
+    }
+
+    .container-dashboard1 {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        height: 810px !important;
+        padding-top: 5px;
+        background-color: brown;
+        /* display: flex; */
     }
 
     .container-dashboard2 {
@@ -117,13 +203,48 @@
         height: 100%;
         /* display: flex; */
         margin-top: 25px;
+        padding: 10px;
+        background-color: grey;
 
+    }
+
+    .row-year-to-year {
+        margin-top: 10px;
+        height: 1100px;
+    }
+
+    .year-to-year {
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 10.5px;
+        font-weight: bold
+    }
+
+    .table-year-to-year {
+        height: 600px;
+        padding: 0;
+        /* background-color: blue; */
+
+    }
+
+    .col-pie {
+        margin: 0 auto;
+        text-align: center;
+        float: left;
+        padding: 5;
+        width: 100%;
+        background: grey;
+    }
+
+    .ant-table table {
+        font-size: 9px;
     }
 
     .container-dashboard3 {
         width: 100%;
-        height: 360px;
+        height: 760px !important;
         display: flex;
+        background-color: yellow;
 
     }
 
@@ -132,6 +253,7 @@
         height: 100%;
         display: flex;
         margin-bottom: 40px;
+        background-color: red;
 
     }
 
@@ -140,6 +262,8 @@
         display: flex;
         margin-top: 15px;
         text-align: center;
+        /* background-color: green; */
+
     }
 
     .row-target-pajak {
@@ -147,8 +271,75 @@
         height: 100%;
         display: flex;
         margin-bottom: 40px;
-
     }
+
+    .title-target-pajak {
+        text-align: center;
+        margin: 0;
+        padding: 0 0 5px 0;
+        font-size: 15px;
+    }
+
+    .subtitle-left-target-pajak {
+        padding: 0 0 5px 0;
+        font-size: 13px;
+        width: 30%;
+        float: left;
+    }
+
+    .subtitle-right-target-pajak {
+        padding: 0 0 5px 0;
+        font-size: 13px;
+        width: 70%;
+        float: left;
+    }
+
+    .gx-card-widget .ant-card-body {
+        padding: 12px;
+    }
+
+    .ant-row {
+        text-align: center;
+        margin: 0;
+    }
+
+    .target-gauge {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-title {
+        font-size: 16px !important;
+    }
+
+    .top-ten-title {
+        width: 60%;
+        float: left;
+        font-size: 10px;
+    }
+
+    .top-ten-nominal {
+        width: 40%;
+        float: left;
+        font-size: 10px;
+    }
+
+    .lebih-banyak {
+        margin-top: 10px;
+        color: blue;
+        border: none;
+        font-size: 12px;
+    }
+
+    .title-latest-transaction {
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 200px;
+        width: 200%;
+        background-color: blueviolet;
+    }
+
 }
 
 @media(min-width: 600px) and (max-width: 767px) {

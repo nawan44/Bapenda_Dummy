@@ -40,13 +40,13 @@ const EventsSection = (props) => {
   return (
     <>
       <Row>
-        <Col span={12}>
-          <Title style={{ float: "left" }} level={4}>
+        <Col lg={12} md={12} sm={24} xs={24}>
+          <Title className="title-latest-transaction" level={4}>
             {" "}
             Latest Transaction
           </Title>
         </Col>
-        <Col span={12}>
+        <Col lg={12} md={12} sm={24} xs={24}>
           <TitleSearch
             style={{ float: "right" }}
             filter={filter}

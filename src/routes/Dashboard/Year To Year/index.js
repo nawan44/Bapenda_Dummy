@@ -3,15 +3,14 @@ import * as moment from "moment";
 import Widget from "components/Widget/index";
 import "moment/locale/id";
 import "../../../assets/styles/flip-card.css";
+import "../../../assets/styles/dashboard.css";
 import jwtDecode from "jwt-decode";
 import { Col, Row, Select, Typography } from "antd";
 import { DatePicker, Space } from "antd";
 import ChartYearToYear from "./chartYearToYear";
 import TableYearToYear from "./tableYearToYear";
-
 import seriesMonthlyThisYear from "../../../components/DataDummy/seriesMonthlyThisYear.json";
 import seriesMonthlyLastYear from "../../../components/DataDummy/seriesMonthlyLastYear.json";
-
 import seriesDaily from "../../../components/DataDummy/seriesDaily.json";
 
 const { Option } = Select;
@@ -196,19 +195,12 @@ const YearToYear = (props) => {
 
   return (
     <Widget styleName="gx-order-history">
-      <Row>
-        <Col span={12} style={{ padding: "0px 0px 0px 10px" }}>
+      <Row className="row-year-to-year">
+        <Col xs={24} xl={12} style={{ padding: "0px 0px 0px 10px" }}>
           <div style={{ width: "500px", height: "100px" }}>
             <div style={{ width: "100%", float: "left" }}>
               {" "}
-              <Typography
-                style={{
-                  textAlign: "left",
-                  margin: "0",
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
+              <Typography className="year-to-year">
                 Pertumbuhan Pajak (Year To Year) *dalam ribuan
               </Typography>
             </div>
@@ -281,7 +273,7 @@ const YearToYear = (props) => {
             // data={resultChart}
           />
         </Col>
-        <Col span={12} style={{ padding: 0 }}>
+        <Col xs={24} xl={12} style={{ padding: 0 }}>
           <TableYearToYear
             // data={data}
             // result={resultTable}
