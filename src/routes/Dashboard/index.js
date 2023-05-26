@@ -125,7 +125,7 @@ const SamplePage = () => {
           <Row>
             <BarTransaksiPendapatan />
           </Row>
-          <Row
+          {/* <Row
             style={{
               margin: 0,
               padding: "0px 5px",
@@ -133,7 +133,7 @@ const SamplePage = () => {
             }}
           >
             <PieChart />
-          </Row>
+          </Row> */}
         </Col>
       </Row>
       <Row className="container-dashboard3">
