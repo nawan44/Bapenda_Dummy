@@ -195,8 +195,25 @@ const YearToYear = (props) => {
 
   return (
     <Widget styleName="gx-order-history">
-      <Row className="row-year-to-year">
-        <Col xs={24} xl={12} style={{ padding: "0px 0px 0px 10px" }}>
+      <Row className="row-year-to-year" style={{ background: "red" }}>
+        <Col
+          xs={36}
+          md={12}
+          sm={24}
+          // xl={8}
+          // offset={4}
+          // nz-col
+          // nzXs="1"
+          // nzSm="6"
+          // nzMd="8"
+          // nzLg="12"
+          // nzXl="24"
+          style={{
+            background: "grey",
+
+            // padding: "0px 0px 0px 10px",
+          }}
+        >
           <div style={{ width: "500px", height: "100px" }}>
             <div style={{ width: "100%", float: "left" }}>
               {" "}
@@ -273,7 +290,16 @@ const YearToYear = (props) => {
             // data={resultChart}
           />
         </Col>
-        <Col xs={24} xl={12} style={{ padding: 0 }}>
+        <Col
+          // xs={12} xl={12}
+
+          xs={36}
+          md={12}
+          sm={24}
+          // xl={8}
+          // offset={4}
+          style={{ padding: 0 }}
+        >
           <TableYearToYear
             // data={data}
             // result={resultTable}
