@@ -93,7 +93,7 @@ const SamplePage = () => {
         />
       </Row>
       <YearToYear />
-      <Row className="row-target-pajak">
+      {/* <Row className="row-target-pajak">
         <Col xl={8} lg={24} md={24} sm={24} xs={24} className="gx-order-sm-2">
           <Widget className="target-gauge">
             <TargetGauge />
@@ -125,7 +125,7 @@ const SamplePage = () => {
           <Row>
             <BarTransaksiPendapatan />
           </Row>
-          {/* <Row
+          <Row
             style={{
               margin: 0,
               padding: "0px 5px",
@@ -133,9 +133,9 @@ const SamplePage = () => {
             }}
           >
             <PieChart />
-          </Row> */}
+          </Row>
         </Col>
-      </Row>
+      </Row> */}
       <Row className="container-dashboard3">
         <JumlahTransaksiHarian
           latestTransaction={latestTransaction}
