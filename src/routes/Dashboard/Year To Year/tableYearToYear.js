@@ -116,16 +116,16 @@ const columns = [
 
 const kolom = () => {
   if (window.innerWidth < 300) {
-    columnsMin;
+    return columnsMin;
   } else {
-    columns;
+    return columns;
   }
 };
 const heightTable = () => {
   if (window.innerWidth < 300) {
-    700;
+    return 700;
   } else {
-    400;
+    return 400;
   }
 };
 function TableYearToYear({ data }) {
