@@ -114,26 +114,28 @@ const columns = [
 //     }
 //   }, [props.shape]);
 
-const kolom = () => {
-  if (window.innerWidth < 300) {
-    columnsMin;
-  } else {
-    return columns;
-  }
-};
-const heightTable = () => {
-  if (window.innerWidth < 300) {
-    700;
-  } else {
-    400;
-  }
-};
+// const kolom = () => {
+//   if (window.innerWidth < 300) {
+//     columnsMin;
+//   } else {
+//     return columns;
+//   }
+// };
+// const heightTable = () => {
+//   if (window.innerWidth < 300) {
+//     700;
+//   } else {
+//     400;
+//   }
+// };
 function TableYearToYear({ data }) {
   return (
     <Table
       className="table-year-to-year"
-      scroll={{ y: heightTable() }}
-      columns={kolom()}
+      // scroll={{ y: heightTable() }}
+      scroll={{ y: 400 }}
+      // columns={kolom()}
+      columns={columns}
       dataSource={data}
       pagination={false}
     />
