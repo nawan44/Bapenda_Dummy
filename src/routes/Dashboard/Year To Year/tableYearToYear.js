@@ -103,18 +103,29 @@ const columns = [
     },
   },
 ];
+
+// const [limit, setLimit] = useState(3);
+//   const [shape, setShape] = useState(props.shape);
+
+//   useEffect(() => {
+//     setShape(props.shape);
+//     if (window.innerWidth < 575) {
+//       setLimit(1)
+//     }
+//   }, [props.shape]);
+
 const kolom = () => {
   if (window.innerWidth < 300) {
-    return columnsMin;
+    columnsMin;
   } else {
     return columns;
   }
 };
 const heightTable = () => {
   if (window.innerWidth < 300) {
-    return 700;
+    700;
   } else {
-    return 400;
+    400;
   }
 };
 function TableYearToYear({ data }) {
