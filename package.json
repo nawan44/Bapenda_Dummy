@@ -79,6 +79,7 @@
     "redux": "^4.0.5",
     "redux-saga": "^1.1.3",
     "redux-thunk": "^2.3.0",
+    "resize-observer-polyfill": "^1.5.1",
     "rheostat": "^4.1.1",
     "rxjs": "^7.5.4",
     "slick-carousel": "^1.8.1",
