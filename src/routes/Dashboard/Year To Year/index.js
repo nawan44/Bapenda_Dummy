@@ -284,13 +284,13 @@ const YearToYear = (props) => {
               />
             </div>
           </div>
-          <ChartYearToYear
+          {/* <ChartYearToYear
             data={resultTable}
             // result={result}
             // data={resultChart}
-          />
+          /> */}
         </Col>
-        {/* <Col
+        <Col
           // xs={12} xl={12}
 
           xs={36}
@@ -305,7 +305,7 @@ const YearToYear = (props) => {
             // result={resultTable}
             data={resultTable}
           />
-        </Col> */}
+        </Col>
       </Row>
     </Widget>
   );
