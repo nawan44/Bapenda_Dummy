@@ -92,7 +92,7 @@ const SamplePage = () => {
           setLatestTransaction={setLatestTransaction}
         />
       </Row>
-      <YearToYear />
+      {/* <YearToYear /> */}
       {/* <Row className="row-target-pajak">
         <Col xl={8} lg={24} md={24} sm={24} xs={24} className="gx-order-sm-2">
           <Widget className="target-gauge">
