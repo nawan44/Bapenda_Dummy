@@ -107,9 +107,9 @@ const SamplePage = () => {
             margin: 0,
             padding: 5,
             textAlign: "center",
-            background: "red",
+            // background: "red",
             width: "100%",
-            backgroundColor: "green",
+            // backgroundColor: "green",
           }}
           xs={24}
           xl={16}

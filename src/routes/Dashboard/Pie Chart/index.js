@@ -95,7 +95,12 @@ function PieChart() {
   console.log("warna ", warna);
 
   return (
-    <div style={{ width: "100%", background: "yellow" }}>
+    <div
+      style={{
+        width: "100%",
+        // background: "yellow"
+      }}
+    >
       <Col className="col-pie">
         <Card
           title={
