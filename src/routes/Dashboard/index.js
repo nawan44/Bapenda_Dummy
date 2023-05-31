@@ -122,7 +122,7 @@ const SamplePage = () => {
           // xs={24}
           className="gx-order-sm-1"
         >
-          {/* <Row>
+          <Row>
             <BarTransaksiPendapatan />
           </Row>
           <Row
@@ -133,7 +133,7 @@ const SamplePage = () => {
             }}
           >
             <PieChart />
-          </Row> */}
+          </Row>
         </Col>
       </Row>
       <Row className="container-dashboard3">
