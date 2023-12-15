@@ -15,7 +15,7 @@ import Widget from "components/Widget/index";
 import "moment/locale/id";
 import "../../../../assets/styles/flip-card.css";
 import jwtDecode from "jwt-decode";
-import { Select, Typography } from "antd";
+import { Row, Col, Select, Typography } from "antd";
 import { DatePicker } from "antd";
 import seriesMonthly from "../../../../components/DataDummy/seriesMonthlyThisYear.json";
 import seriesDaily from "../../../../components/DataDummy/seriesDaily.json";
@@ -144,21 +144,16 @@ const GrafikPendapatan = (props) => {
         <div style={{ width: "500px" }}>
           <div style={{ width: "100%", float: "left" }}>
             {" "}
-            <Typography
-              style={{
-                textAlign: "left",
-                margin: "0",
-                fontSize: "14px",
-                fontWeight: "bold",
-              }}
-            >
+            <Typography className="dashboard-title-grafik ">
               Grafik Pendapatan
             </Typography>
           </div>
-          <div style={{ width: "25%", float: "left" }}>
+          {/* <Row>
+            <Col span={8}> */}
+          <div className="grafik-select-box1">
             {" "}
             <Select
-              style={{ margin: "10px 0 0 0", width: "90%" }}
+              style={{ margin: "10px 0 0 0", padding: 0, width: "90%" }}
               name="jenisChart"
               value={jenisChart}
               onChange={handleChangeSelect}
@@ -167,12 +162,15 @@ const GrafikPendapatan = (props) => {
               <Option value="Monthly">Monthly</Option>
             </Select>
           </div>
-          <div style={{ width: "30%", float: "left" }}>
+          {/* </Col>
+            <Col span={8}> */}{" "}
+          <div className="grafik-select-box2">
             {jenisChart === "Daily" ? (
               <Select
                 style={{ margin: "10px 0 0 0", width: "90%" }}
                 name="bulanSelect"
                 // value={bulanSelect}
+                value="Januari"
                 onChange={handleChangeBulan}
               >
                 <Option value="1">Januari</Option>
@@ -192,7 +190,9 @@ const GrafikPendapatan = (props) => {
               <div></div>
             )}
           </div>
-          <div style={{ width: "20%", float: "left", paddingTop: "7px" }}>
+          {/* </Col>
+            <Col span={8}> */}
+          <div className="grafik-select-box3">
             <DatePicker
               disabledDate={disabledDate}
               defaultValue={moment("2022", "YYYY")}
@@ -201,6 +201,8 @@ const GrafikPendapatan = (props) => {
               picker="year"
             />
           </div>
+          {/* </Col>
+          </Row> */}
         </div>
       }
     >

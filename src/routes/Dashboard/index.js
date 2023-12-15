@@ -83,38 +83,48 @@ const SamplePage = () => {
           latestTransaction={latestTransaction}
           setLatestTransaction={setLatestTransaction}
         />
-        <PendapatanBulanan
+        {/* <PendapatanBulanan
           latestTransaction={latestTransaction}
           setLatestTransaction={setLatestTransaction}
         />
         <PendapatanTahunan
           latestTransaction={latestTransaction}
           setLatestTransaction={setLatestTransaction}
-        />
+        /> */}
       </Row>
-      <YearToYear />
-      <Row className="row-target-pajak">
-        <Col xl={8} lg={24} md={24} sm={24} xs={24} className="gx-order-sm-2">
-          <Widget className="target-gauge">
+      <Row className="container-dashboard2">
+        <YearToYear />
+      </Row>
+      <Row className="container-dashboard3">
+        <Col
+          xs={18}
+          md={6}
+          sm={12}
+          className="gx-order-sm-2 dashboard3-col-right"
+        >
+          {/* <Widget className="target-gauge"> */}
+          <Row className="target-gauge">
             <TargetGauge />
-          </Widget>
-          <Widget>
+          </Row>
+          {/* </Widget>
+          <Widget className="target-gauge"> */}
+          <Row className="target-gauge">
             <TopTen />
-          </Widget>
+          </Row>
+          {/* </Widget> */}
         </Col>
         <Col
           style={{
             margin: 0,
-            padding: 5,
+            // padding: 5,
             textAlign: "center",
-            // background: "red",
+            background: "red",
             width: "100%",
-            // backgroundColor: "green",
+            backgroundColor: "green",
           }}
-          xs={24}
-          xl={16}
-          lg={24}
-          md={24}
+          xs={54}
+          md={18}
+          sm={36}
           // xl={16}
           // lg={24}
           // md={24}
@@ -136,7 +146,7 @@ const SamplePage = () => {
           </Row>
         </Col>
       </Row>
-      <Row className="container-dashboard3">
+      <Row className="container-dashboard4">
         <JumlahTransaksiHarian
           latestTransaction={latestTransaction}
           setLatestTransaction={setLatestTransaction}

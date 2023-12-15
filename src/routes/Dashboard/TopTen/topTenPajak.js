@@ -55,13 +55,13 @@ function TopTenPajak() {
         {dataTopTenPajak?.slice(0, visible).map((row, i) => (
           <h3>
             {" "}
-            <div style={{ width: "60%", float: "left" }}>
+            <div className="left-top-title">
               <li className="top-ten-title" key={row.key}>
                 {row.nama_wp}
               </li>
               <h5 className="top-ten-title">{row.nik}</h5>
             </div>
-            <div style={{ width: "40%", float: "left" }}>
+            <div className="right-top-title">
               <h3 className="top-ten-nominal">{row.nominal_pajak}</h3>
             </div>
           </h3>

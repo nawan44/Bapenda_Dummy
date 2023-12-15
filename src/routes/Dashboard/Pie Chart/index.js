@@ -95,16 +95,13 @@ function PieChart() {
   console.log("warna ", warna);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        // background: "yellow"
-      }}
-    >
+    <div style={{ width: "100%", background: "yellow" }}>
       <Col className="col-pie">
         <Card
           title={
-            <h3 style={{ fontWeight: "bold" }}>Pendapatan Per Kategori</h3>
+            <h3 style={{ fontWeight: "bold" }} className="title-col-pie">
+              Pendapatan Per Kategori
+            </h3>
           }
         >
           {dataKategori.map((item) => (
@@ -133,7 +130,11 @@ function PieChart() {
             padding: 0,
             textAlign: "center",
           }}
-          title={<h3 style={{ fontWeight: "bold" }}>Status Device</h3>}
+          title={
+            <h3 style={{ fontWeight: "bold" }} className="title-col-pie">
+              Status Device
+            </h3>
+          }
         >
           {changeDataStatusDevice.map((item) => (
             <span

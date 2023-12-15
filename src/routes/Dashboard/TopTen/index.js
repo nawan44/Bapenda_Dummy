@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Avatar, Divider, Timeline } from "antd";
+import { Avatar, Card, Divider, Timeline } from "antd";
 import WidgetHeader from "../../../components/WidgetHeader/index";
 // import ActivityItem from "./ActivityItem";
 import ActivityItem from "../../../components/dashboard/CRM/ActivityItem";
@@ -33,28 +33,29 @@ function TopTen() {
   // };
 
   return (
-    <div className="gx-entry-sec">
-      <WidgetHeader />
+    // <div className="gx-entry-sec">
+    //   <WidgetHeader />
 
-      <div className="gx-timeline-info">
-        {/* <h4 className="gx-timeline-info-day">AAA</h4> */}
-
-        {topTenRevenue?.length > 1 ? (
-          <div>
-            <TopTenPajak />
-            <Divider />
-            <TopTenRevenue
-              topTenRevenue={topTenRevenue}
-              setTopTenRevenue={setTopTenRevenue}
-            />
-            <Divider />
-            <TopTenTransaction />
-          </div>
-        ) : (
-          "Data Top 10 Tidak Ada"
-        )}
-      </div>
-    </div>
+    // {/* <div className="gx-timeline-info"> */}
+    //   {/* <h4 className="gx-timeline-info-day">AAA</h4> */}
+    <Card className="card-right">
+      {topTenRevenue?.length > 1 ? (
+        <div>
+          <TopTenPajak />
+          <Divider />
+          <TopTenRevenue
+            topTenRevenue={topTenRevenue}
+            setTopTenRevenue={setTopTenRevenue}
+          />
+          <Divider />
+          <TopTenTransaction />
+        </div>
+      ) : (
+        "Data Top 10 Tidak Ada"
+      )}
+    </Card>
+    // {/* </div>
+    // </div> */}
   );
 }
 

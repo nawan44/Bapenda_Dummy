@@ -141,18 +141,11 @@ const GrafikTransaksi = (props) => {
         <div style={{ width: "500px" }}>
           <div style={{ width: "100%", float: "left" }}>
             {" "}
-            <Typography
-              style={{
-                textAlign: "left",
-                margin: "0",
-                fontSize: "14px",
-                fontWeight: "bold",
-              }}
-            >
+            <Typography className="dashboard-title-grafik">
               Grafik Transaksi
             </Typography>
           </div>
-          <div style={{ width: "25%", float: "left" }}>
+          <div className="grafik-select-box1">
             {" "}
             <Select
               style={{ margin: "10px 0 0 0", width: "90%" }}
@@ -164,7 +157,7 @@ const GrafikTransaksi = (props) => {
               <Option value="Monthly">Monthly</Option>
             </Select>
           </div>
-          <div style={{ width: "30%", float: "left" }}>
+          <div className="grafik-select-box2">
             {jenisChart === "Daily" ? (
               <Select
                 style={{ margin: "10px 0 0 0", width: "90%" }}
@@ -189,7 +182,7 @@ const GrafikTransaksi = (props) => {
               <div></div>
             )}
           </div>
-          <div style={{ width: "20%", float: "left", paddingTop: "7px" }}>
+          <div className="grafik-select-box3">
             <DatePicker
               disabledDate={disabledDate}
               defaultValue={moment("2022", "YYYY")}

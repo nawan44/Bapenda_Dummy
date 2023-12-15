@@ -142,6 +142,7 @@ const EcommerceStatus = ({
           height: "100%",
           textAlign: "center",
           margin: "0 auto",
+
           // paddingLeft: color === "grey" ? "0px" : "70px",
         }}
       >

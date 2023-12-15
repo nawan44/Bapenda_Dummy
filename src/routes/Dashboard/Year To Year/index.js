@@ -194,38 +194,34 @@ const YearToYear = (props) => {
     });
 
   return (
-    <Widget styleName="gx-order-history">
-      <Row
-        className="row-year-to-year"
-        // style={{ background: "red" }}
+    // <Widget styleName="gx-order-history" style={{ padding: 0 }}>
+    <>
+      <Col
+        xs={36}
+        md={12}
+        sm={24}
+        // xl={8}
+        // offset={4}
+        // nz-col
+        // nzXs="1"
+        // nzSm="6"
+        // nzMd="8"
+        // nzLg="12"
+        // nzXl="24"
+        style={{
+          background: "grey",
+
+          // padding: "0px 0px 0px 10px",
+        }}
       >
-        <Col
-          xs={36}
-          md={12}
-          sm={24}
-          // xl={8}
-          // offset={4}
-          // nz-col
-          // nzXs="1"
-          // nzSm="6"
-          // nzMd="8"
-          // nzLg="12"
-          // nzXl="24"
-          style={
-            {
-              // background: "grey",
-              // padding: "0px 0px 0px 10px",
-            }
-          }
-        >
-          <div style={{ width: "500px", height: "100px" }}>
-            <div style={{ width: "100%", float: "left" }}>
-              {" "}
-              <Typography className="year-to-year">
-                Pertumbuhan Pajak (Year To Year) *dalam ribuan
-              </Typography>
-            </div>
-            {/* <div style={{ width: "25%", float: "left" }}>
+        <div style={{ width: "500px", height: "100px" }}>
+          <div style={{ width: "100%", float: "left" }}>
+            {" "}
+            <Typography className="year-to-year">
+              Pertumbuhan Pajak (Year To Year) *dalam ribuan
+            </Typography>
+          </div>
+          {/* <div style={{ width: "25%", float: "left" }}>
               {" "}
               <Select
                 style={{ margin: "10px 0 0 0", width: "90%" }}
@@ -262,56 +258,60 @@ const YearToYear = (props) => {
                 <div></div>
               )}
             </div> */}
-            <div
-              style={{
-                width: "20%",
-                float: "left",
-                paddingTop: "7px",
-                background: "yellow",
-              }}
-            >
-              <DatePicker
-                disabledDate={disabledDate}
-                defaultValue={moment("2021", "YYYY")}
-                disabled
-                onChange={handleThisMonthly}
-                picker="year"
-              />
-            </div>
-            <div style={{ width: "20%", float: "left", paddingTop: "7px" }}>
-              <DatePicker
-                disabledDate={disabledDate}
-                defaultValue={moment("2022", "YYYY")}
-                disabled
-                onChange={handleThisMonthly}
-                picker="year"
-              />
-            </div>
+          <div
+            style={{
+              width: "20%",
+              float: "left",
+              paddingTop: "7px",
+              background: "yellow",
+            }}
+          >
+            <DatePicker
+              disabledDate={disabledDate}
+              defaultValue={moment("2021", "YYYY")}
+              disabled
+              onChange={handleThisMonthly}
+              picker="year"
+              size="xs"
+              placeholder="Xsmall"
+            />
           </div>
-          <ChartYearToYear
-            data={resultTable}
-            // result={result}
-            // data={resultChart}
-          />
-        </Col>
-        <Col
-          // xs={12} xl={12}
+          <div style={{ width: "20%", float: "left", paddingTop: "7px" }}>
+            <DatePicker
+              disabledDate={disabledDate}
+              defaultValue={moment("2022", "YYYY")}
+              disabled
+              onChange={handleThisMonthly}
+              picker="year"
+              size="lg"
+              placeholder="Large"
+            />
+          </div>
+        </div>
+        <ChartYearToYear
+          data={resultTable}
+          // result={result}
+          // data={resultChart}
+        />
+      </Col>
+      <Col
+        // xs={12} xl={12}
 
-          xs={36}
-          md={12}
-          sm={24}
-          // xl={8}
-          // offset={4}
-          style={{ padding: 0 }}
-        >
-          <TableYearToYear
-            // data={data}
-            // result={resultTable}
-            data={resultTable}
-          />
-        </Col>
-      </Row>
-    </Widget>
+        xs={36}
+        md={12}
+        sm={24}
+        // xl={8}
+        // offset={4}
+        style={{ padding: 0 }}
+      >
+        <TableYearToYear
+          // data={data}
+          // result={resultTable}
+          data={resultTable}
+        />
+      </Col>
+    </>
+    // </Widget>
   );
 };
 

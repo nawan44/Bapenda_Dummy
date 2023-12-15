@@ -175,9 +175,8 @@ function SelisihNominal({
         <div style={{ height: "30px" }}>
           <span style={{ margin: "10px 0 0 0" }}>
             {selisihPendapatanTahunIni()}
-         
           </span>
-          
+
           {moneyThisYear < moneyLastYear ? (
             <span className="selisih-down">
               {" "}
@@ -241,7 +240,7 @@ function SelisihNominal({
           <span style={{ margin: "10px 0 0 0" }}>
             {selisihTransaksiTahunIni()}
           </span>
-          
+
           {transactionThisYear < transactionLastYear ? (
             <span className="selisih-down">
               {" "}
